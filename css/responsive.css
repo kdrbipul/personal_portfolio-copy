@@ -28,6 +28,7 @@
     /* ======================== Nav part responsive start here ================================== */
 
     nav {
+        -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
         box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     }
 
@@ -42,11 +43,15 @@
     nav .container ul {
         position: fixed;
         top: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         z-index: 3;
         width: 16rem;
         height: 100vh;
         background-color: var(--color-white);
+        -webkit-box-shadow: 1rem 0 2rem var(--color-primary-light);
         box-shadow: 1rem 0 2rem var(--color-primary-light);
         display: block;
     }
@@ -58,6 +63,8 @@
 
     nav .container ul li a {
         width: 100%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: start;
         padding-left: 2rem;
     }
@@ -92,9 +99,19 @@
     }
 
     section.landing .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 20% 50%;
         grid-template-rows: 20% 50%;
         text-align: center;
+    }
+    section.landing .container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    section.landing .container > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
     }
 
     section.landing .container .socials {
@@ -161,6 +178,7 @@
     /* ========================= About Section responsive start here ======================= */
 
     section.about .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 1rem;
         text-align: justify;
@@ -188,6 +206,7 @@
     /* ========================= Services Section responsive part start here ======================= */
 
     section.services .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     /* ========================= Services Section responsive part end here =========================== */
@@ -195,9 +214,9 @@
     /* ========================= Portfolio Section responsive part start here ======================== */
 
     section.recent-work .container .projects {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
-
     section.recent-work .container h1 {
         width: 94vw;
         margin: 1.4rem 0 1rem;
@@ -208,6 +227,7 @@
     /* ========================= Testimonial Section responsive part start here ==================== */
 
     section.testimonials .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         width: 94vw;
     }
@@ -232,6 +252,9 @@
     /* ======================= Footer Section responsive part start here ============================= */
 
     footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 3rem;
     }
@@ -272,6 +295,7 @@
     /* ======================== Nav part responsive start here ================================== */
 
     nav {
+        -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
         box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     }
 
@@ -286,11 +310,15 @@
     nav .container ul {
         position: fixed;
         top: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         z-index: 3;
         width: 16rem;
         height: 100vh;
         background-color: var(--color-white);
+        -webkit-box-shadow: 1rem 0 2rem var(--color-primary-light);
         box-shadow: 1rem 0 2rem var(--color-primary-light);
         display: none;
     }
@@ -302,6 +330,8 @@
 
     nav .container ul li a {
         width: 100%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: start;
         padding-left: 2rem;
     }
@@ -336,9 +366,19 @@
     }
 
     section.landing .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 20% 50%;
         grid-template-rows: 20% 50%;
         text-align: center;
+    }
+    section.landing .container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    section.landing .container > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
     }
 
     section.landing .container .socials {
@@ -361,6 +401,7 @@
     }
 
     section.landing .container .profile-area {
+        -ms-grid-row: 1;
         grid-row: 1;
         width: 94%;
         margin: 0 auto;
@@ -405,6 +446,7 @@
     /* ========================= About Section responsive start here ======================= */
 
     section.about .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 1rem;
         text-align: justify;
@@ -432,6 +474,7 @@
     /* ========================= Services Section responsive part start here =================== */
 
     section.services .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     /* ========================= Services Section responsive part end here ======================== */
@@ -439,6 +482,7 @@
     /* ========================= Portfolio Section responsive part start here ====================== */
 
     section.recent-work .container .projects {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -452,6 +496,7 @@
     /* ========================= Testimonial Section responsive part start here ==================== */
 
     section.testimonials .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         width: 94vw;
     }
@@ -476,6 +521,9 @@
     /* ======================= Footer Section responsive part start here =============================== */
 
     footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 3rem;
     }
@@ -518,6 +566,7 @@
     /* ======================== Nav part responsive start here ================================== */
 
     nav {
+        -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
         box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     }
 
@@ -532,11 +581,15 @@
     nav .container ul {
         position: fixed;
         top: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         z-index: 3;
         width: 16rem;
         height: 100vh;
         background-color: var(--color-white);
+        -webkit-box-shadow: 1rem 0 2rem var(--color-primary-light);
         box-shadow: 1rem 0 2rem var(--color-primary-light);
         display: none;
     }
@@ -548,6 +601,8 @@
 
     nav .container ul li a {
         width: 100%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: start;
         padding-left: 2rem;
     }
@@ -582,9 +637,19 @@
     }
 
     section.landing .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 20% 50%;
         grid-template-rows: 20% 50%;
         text-align: center;
+    }
+    section.landing .container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    section.landing .container > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
     }
 
     section.landing .container .socials {
@@ -651,6 +716,7 @@
     /* ========================= About Section responsive start here ======================= */
 
     section.about .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 1rem;
         text-align: justify;
@@ -678,6 +744,7 @@
     /* ========================= Services Section responsive part start here ========================= */
 
     section.services .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     /* ========================= Services Section responsive part end here ============================== */
@@ -685,6 +752,7 @@
     /* ========================= Portfolio Section responsive part start here =========================== */
 
     section.recent-work .container .projects {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -698,6 +766,7 @@
     /* ========================= Testimonial Section responsive part start here ==================== */
 
     section.testimonials .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         width: 94vw;
     }
@@ -722,10 +791,12 @@
     /* ======================= Footer Section responsive part start here ================= */
 
     footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 3rem;
     }
-
     /* footer .container ul {
         flex-direction: column;
         text-align: center;
@@ -766,6 +837,7 @@
     /* ======================== Nav part responsive start here ================================== */
 
     nav {
+        -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
         box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     }
 
@@ -780,11 +852,15 @@
     nav .container ul {
         position: fixed;
         top: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         z-index: 3;
         width: 16rem;
         height: 100vh;
         background-color: var(--color-white);
+        -webkit-box-shadow: 1rem 0 2rem var(--color-primary-light);
         box-shadow: 1rem 0 2rem var(--color-primary-light);
         display: none;
     }
@@ -796,6 +872,8 @@
 
     nav .container ul li a {
         width: 100%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: start;
         padding-left: 2rem;
     }
@@ -830,9 +908,19 @@
     }
 
     section.landing .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 20% 50%;
         grid-template-rows: 20% 50%;
         text-align: center;
+    }
+    section.landing .container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    section.landing .container > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
     }
 
     section.landing .container .socials {
@@ -855,6 +943,7 @@
     }
 
     section.landing .container .profile-area {
+        -ms-grid-row: 1;
         grid-row: 1;
         width: 94%;
         margin: 0 auto;
@@ -899,6 +988,7 @@
     /* ========================= About Section responsive start here ======================= */
 
     section.about .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 1rem;
         text-align: justify;
@@ -926,6 +1016,7 @@
     /* ========================= Services Section responsive part start here ======================= */
 
     section.services .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     /* ========================= Services Section responsive part end here ============================= */
@@ -933,6 +1024,7 @@
     /* ========================= Portfolio Section responsive part start here =========================== */
 
     section.recent-work .container .projects {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -946,6 +1038,7 @@
     /* ========================= Testimonial Section responsive part start here ==================== */
 
     section.testimonials .container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         width: 94vw;
     }
@@ -970,6 +1063,9 @@
     /* ======================= Footer Section responsive part start here ================= */
 
     footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 3rem;
     }
@@ -989,6 +1085,9 @@
 
 @media screen and (max-width: 400px){
     footer .container ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
         gap: 1rem;
